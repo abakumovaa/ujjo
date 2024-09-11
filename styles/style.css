@@ -1,3 +1,5 @@
+/*----------- СБРОС СТИЛЕЙ ----------*/
+
 *,
 *::before,
 *::after {
@@ -11,6 +13,9 @@ html {
 html,
 body {
     height: 100%;
+    margin: 0 auto;
+    font-family: var(--font-family);
+    text-transform: uppercase;
 }
 
 h1,
@@ -35,3 +40,136 @@ ol {
 a {
     text-decoration: none;
 }
+
+
+/*----------- TICKER - плавающая строка ------- */
+
+.ticker {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.ticker__wrapper {
+  display: flex;
+}
+
+.ticker__item {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0px 15px;
+  white-space: nowrap;
+  animation: ticker 5s linear infinite;
+}
+
+.ticker__img {
+  margin-left: 29px;
+}
+
+  @keyframes ticker {
+    0% {
+      transform: translateZ(0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+/*----------- HEADER + база ----------*/
+
+.container {
+  max-width: var(--container-width);
+  color: #000;
+  border: 1px solid #000;
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px;
+  margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  text-transform: uppercase;
+  background-color: #FB4B4D;
+  color: white;
+  padding: 15px 44px;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.6em;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav__link {
+  padding: 15px 44px;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.6em;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+
+/*----------- MAIN. MAIN-INFO ----------*/
+
+.main-info {
+display: flex;
+}
+
+.main-container {
+  padding: 0;
+  width: var(--container-width);
+}
+
+.main-info__left {
+  width: 50%;
+  border-right: 1px solid #000;
+}
+
+.main-info__right {
+  width: 50%;
+}
+
+.main-info__left-slogan {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.6em;
+  text-align: center;
+  letter-spacing: 0.5px;
+  padding: 23px 0;
+  }
+
+  .main-info__left-img {
+    padding: 20px;
+  }
+
+  .main-info__right-title {
+    text-align: center;
+    margin: 0;
+    padding: 20px 100px;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 65px;
+    letter-spacing: 0.5px;
+    color: #000;
+    border-bottom: 1px solid #000;
+  }
+
+  .main-info__right-img {
+    padding: 20px;
+  }
+
+  /*----------- MAIN. PRODUCTS ----------*/
+
+  
+
