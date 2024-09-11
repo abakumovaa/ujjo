@@ -122,7 +122,7 @@ a {
 
 /*----------- MAIN. MAIN-INFO ----------*/
 
-.main-info {
+.info {
 display: flex;
 }
 
@@ -131,16 +131,16 @@ display: flex;
   width: var(--container-width);
 }
 
-.main-info__left {
+.info__left {
   width: 50%;
   border-right: 1px solid #000;
 }
 
-.main-info__right {
+.info__right {
   width: 50%;
 }
 
-.main-info__left-slogan {
+.info__left-slogan {
   font-weight: 400;
   font-size: 1em;
   line-height: 1.6em;
@@ -149,11 +149,11 @@ display: flex;
   padding: 23px 0;
   }
 
-  .main-info__left-img {
+  .info__left-img {
     padding: 20px;
   }
 
-  .main-info__right-title {
+  .info__right-title {
     text-align: center;
     margin: 0;
     padding: 20px 100px;
@@ -165,11 +165,50 @@ display: flex;
     border-bottom: 1px solid #000;
   }
 
-  .main-info__right-img {
+  .info__right-img {
     padding: 20px;
   }
 
   /*----------- MAIN. PRODUCTS ----------*/
 
-  
+  .products-container {
+    padding: 0;
+    border-bottom: 1px solid #000;
+  }
+
+  .products__slogan-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 60px 30px;
+  }
+
+  .products__slogan-container::before {
+    content: "";
+    display: block;
+    width: 225px;
+    height: 156px;
+    background-image: url("../img/scorpio-left.svg");
+  }
+
+  .products__slogan-container::after {
+    content: "";
+    display: block;
+    width: 225px;
+    height: 156px;
+    background-image: url("../img/scorpio-right.svg");
+  }
+
+  .products__slogan {
+    max-width: 785px;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+
+
+
+
 
