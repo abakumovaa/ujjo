@@ -337,6 +337,50 @@ display: flex;
     margin-right: 30px;
   }
 
+  .ticker__img-review:last-child {
+    margin-right: 0;
+  }
+
   /*----------- MAIN. BANNER ----------*/
 
+  .banner-container {
+    padding: 0;
+  }
 
+  .banner__image {
+    width: 100%;
+    display: block;
+    margin-top: -70px;
+  }
+
+
+  /*----------- FOOTER ----------*/
+
+  .footer {
+    border-bottom: 1px solid #000;
+  }
+
+  .footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 93px;
+    gap: 398px;
+  }
+
+  .footer-container {
+    background-color: #CDFD3B;
+    padding: 0;
+  }
+
+  .footer__link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  .footer__text {
+    cursor: none;
+  }
