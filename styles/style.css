@@ -105,6 +105,20 @@ a {
   cursor: pointer;
 }
 
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  position: relative;
+  top: 2px;
+}
+
+.nav__link:hover {
+  color: var(--btn-color);
+  transition: opacity 0.2s ease-in;
+}
+
 .nav__list {
   display: flex;
   justify-content: space-around;
@@ -129,7 +143,7 @@ a {
 
 .main-container {
   padding: 0;
-  width: var(--container-width);
+  max-width: var(--container-width);
 }
 
 .info__left {
@@ -216,7 +230,6 @@ a {
 
   .products__list {
     display: flex;
-    flex-wrap: wrap;
     gap: 23px;
   }
 
@@ -379,6 +392,11 @@ a {
     line-height: 24px;
     letter-spacing: 0.5px;
     text-align: center;
+  }
+
+  .footer__link:hover {
+    color: var(--btn-color);
+    transition: opacity 0.2s ease-in;
   }
 
   .footer__text {
