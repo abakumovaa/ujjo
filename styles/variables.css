@@ -3,8 +3,10 @@
 :root {
     --font-family: "Roboto", sans-serif;
     --font-weight: 400;
-    --border: 1px solid var(--border-color);
+    --border: 1px solid var(--dark-color);
     --btn-color: #FB4B4D;
+    --btn-text-color: white;
     --container-width: 1397px;
-    --border-color: #000;
+    --dark-color: #000;
+    --footer-color: #CDFD3B;
 }
