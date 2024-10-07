@@ -11,8 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- сделать изображения через css? через псевдоэлементы? -->
-    <!-- Шапка сайта -->
     <header class="header">
         <div class="container">
             <a href="#" class="header__back btn">Go Back</a>
@@ -21,7 +19,10 @@
                     <li class="nav__item"><a href="#" class="nav__link">Story</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
                     <li class="nav__item"><a href="#" class="nav_link logo">
-                        <img src="img/logo_header.svg" alt="Header logo">
+                        <picture>
+                            <source srcset="./img/logo_header.svg" type="image/svg+xml" />
+                            <img src="./img/logo_header.png" alt="Header logo"/>
+                        </picture>
                     </a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Wholesale</a></li>
@@ -36,40 +37,64 @@
             <div class="container main-container">
                 <div class="info__left">
                     <div class="info__left-logo">
-                        <img src="./img/logo_text.svg" alt="UJJO logo">
+                        <picture>
+                            <source srcset="./img/logo_text.svg" type="image/svg+xml" />
+                            <img src="./img/logo_text.png" alt="UJJO logo"/>
+                        </picture>
                     </div>
                     <div class="info__left-slogan ticker">
                         <div class="ticker__wrapper">
                             <div class="ticker__item">
                                 put some fire in your belly
-                                <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img">
+                                <picture>
+                                    <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                                    <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img"/>
+                                </picture>
                             </div>
                             <div class="ticker__item">
                                 put some fire in your belly
-                                <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img">
+                                <picture>
+                                    <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                                    <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img"/>
+                                </picture>
                             </div>
                             <div class="ticker__item">
                                 put some fire in your belly
-                                <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img">
+                                <picture>
+                                    <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                                    <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img"/>
+                                </picture>
                             </div>
                             <div class="ticker__item">
                                 put some fire in your belly
-                                <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img">
+                                <picture>
+                                    <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                                    <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img"/>
+                                </picture>
                             </div>
                             <div class="ticker__item">
                                 put some fire in your belly
-                                <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img">
+                                <picture>
+                                    <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                                    <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img"/>
+                                </picture>
                             </div>
                         </div>
                     </div>
                     <div class="info__left-img">
-                        <img src="./img/sauce_coffee.jpg" alt="Sauce with coffee">
+                        <picture>
+                            <source srcset="./img/sauce_coffee.png" type="image/png" />
+                            <img src="./img/sauce_coffee.jpg" alt="Sauce with coffee" loading="lazy"/>
+                        </picture>
                     </div>
                 </div>
                 <div class="info__right">
                     <h1 class="info__right-title">THE FIRST HOT SAUCE MADE FOR COFFEE</h1>
                     <div class="info__right-img">
-                        <img src="img/sauce_hand.jpg" alt="Sauce in hand">
+                        <picture>
+                            <source srcset="./img/sauce_hand.png" type="image/png" />
+                            <img src="./img/sauce_hand.jpg" alt="Sauce in hand" loading="lazy"/>
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -81,31 +106,52 @@
                 </div>
                 <div class="border-block products__content">
                     <div class="products__decor">
-                        <img src="img/small_fire.svg" alt="Small fire decoration">
-                        <img src="img/big_fire.svg" alt="Big fire decoration">
-                        <img src="img/big_fire.svg" alt="Big fire decoration">
-                        <img src="img/small_fire.svg" alt="Small fire decoration">
+                        <picture>
+                            <source srcset="./img/small_fire.svg" type="image/svg+xml" />
+                            <img src="./img/small_fire.png" alt="Small fire decoration" loading="lazy"/>
+                        </picture>
+                        <picture>
+                            <source srcset="./img/big_fire.svg" type="image/svg+xml" />
+                            <img src="./img/big_fire.png" alt="Big fire decoration" loading="lazy"/>
+                        </picture>
+                        <picture>
+                            <source srcset="./img/big_fire.svg" type="image/svg+xml" />
+                            <img src="./img/big_fire.png" alt="Big fire decoration" loading="lazy"/>
+                        </picture>
+                        <picture>
+                            <source srcset="./img/small_fire.svg" type="image/svg+xml" />
+                            <img src="./img/small_fire.png" alt="Small fire decoration" loading="lazy"/>
+                        </picture>
                     </div>
                     <ul class="products__list">
                         <li class="products__item">
                             <article class="card">
                                 <div class="card__text">tangy and tingly</div>
                                 <h3 class="card__title">light roast blend</h3>
-                                <img src="./img/product-1.svg" alt="First product card image" class="card__img">
+                                <picture>
+                                    <source srcset="./img/product-1.svg" type="image/svg+xml" />
+                                    <img src="./img/product-1.png" alt="First product card image" class="card__img" loading="lazy"/>
+                                </picture>
                             </article>
                         </li>
                         <li class="products__item">
                             <article class="card">
                                 <div class="card__text">light & dark roast</div>
                                 <h3 class="card__title">ujjo sampler pack</h3>
-                                <img src="./img/product-2.svg" alt="Second product card image" class="card__img">
+                                <picture>
+                                    <source srcset="./img/product-2.svg" type="image/svg+xml" />
+                                    <img src="./img/product-2.png" alt="Second product card image" class="card__img" loading="lazy"/>
+                                </picture>
                             </article>
                         </li>
                         <li class="products__item">
                             <article class="card">
                                 <div class="card__text">tangy and tingly</div>
                                 <h3 class="card__title">dark roast blend</h3>
-                                <img src="./img/product-3.svg" alt="Third product card image" class="card__img">
+                                <picture>
+                                    <source srcset="./img/product-3.svg" type="image/svg+xml" />
+                                    <img src="./img/product-3.png" alt="Third product card image" class="card__img" loading="lazy"/>
+                                </picture>
                             </article>
                         </li>
                     </ul>
@@ -115,28 +161,46 @@
                         <div class="ticker__wrapper">
                             <div class="ticker__item">
                                 put some fire in your belly
-                                <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img">
+                                <picture>
+                                    <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                                    <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img"/>
+                                </picture>
                             </div>
                             <div class="ticker__item">
                                 put some fire in your belly
-                                <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img">
+                                <picture>
+                                    <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                                    <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img"/>
+                                </picture>
                             </div>
                             <div class="ticker__item">
                                 put some fire in your belly
-                                <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img">
+                                <picture>
+                                    <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                                    <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img"/>
+                                </picture>
                             </div>
                             <div class="ticker__item">
                                 put some fire in your belly
-                                <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img">
+                                <picture>
+                                    <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                                    <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img"/>
+                                </picture>
                             </div>
                             <div class="ticker__item">
                                 put some fire in your belly
-                                <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img">
+                                <picture>
+                                    <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                                    <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img"/>
+                                </picture>
                             </div>
                         </div>
                     </div>
                     <div class="products__img-cover">
-                        <img src="img/pouring_sauce.jpg" alt="Products cover pouring sauce">
+                        <picture>
+                            <source srcset="./img/pouring_sauce.png" type="image/png" />
+                            <img src="./img/pouring_sauce.jpg" alt="Products cover pouring sauce" loading="lazy"/>
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -149,7 +213,10 @@
                         <h2 class="review__title">
                             the story behind the souce
                         </h2>
-                        <img src="img/girl.jpg" alt="Girl with sauce and coffee" class="review__img">
+                        <picture>
+                            <source srcset="./img/girl.png" type="image/png" />
+                            <img src="./img/girl.jpg" alt="Girl with sauce and coffee" class="review__img" loading="lazy"/>
+                        </picture>
                     </div>
                     <div class="review__right">
                         <div class="review__content">
@@ -178,27 +245,51 @@
                 <div class="ticker__wrapper">
                     <div class="ticker__item">
                         CONTACT FOR PARTNERSHIP OPPORTUNITIES
-                        <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img-review">
+                        <picture>
+                            <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                            <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img-review"/>
+                        </picture>
                         download our media kit
-                        <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img-review">
+                        <picture>
+                            <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                            <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img-review"/>
+                        </picture>
                     </div>
                     <div class="ticker__item">
                         CONTACT FOR PARTNERSHIP OPPORTUNITIES
-                        <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img-review">
+                        <picture>
+                            <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                            <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img-review"/>
+                        </picture>
                         download our media kit
-                        <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img-review">
+                        <picture>
+                            <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                            <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img-review"/>
+                        </picture>
                     </div>
                     <div class="ticker__item">
                         CONTACT FOR PARTNERSHIP OPPORTUNITIES
-                        <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img-review">
+                        <picture>
+                            <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                            <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img-review"/>
+                        </picture>
                         download our media kit
-                        <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img-review">
+                        <picture>
+                            <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                            <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img-review"/>
+                        </picture>
                     </div>
                     <div class="ticker__item">
                         CONTACT FOR PARTNERSHIP OPPORTUNITIES
-                        <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img-review">
+                        <picture>
+                            <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                            <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img-review"/>
+                        </picture>
                         download our media kit
-                        <img src="./img/pepper.svg" alt="Black pepper icon" class="ticker__img-review">
+                        <picture>
+                            <source srcset="./img/pepper.svg" type="image/svg+xml" />
+                            <img src="./img/pepper.png" alt="Black pepper icon" class="ticker__img-review"/>
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -206,9 +297,11 @@
 
         <section class="banner">
             <div class="container banner-container">
-                <img src="img/banner.svg" 
-                alt="Banner with text logo, green fire and decorative elements" 
-                class="banner__image">
+                <picture>
+                    <source srcset="./img/banner.svg" type="image/svg+xml" />
+                    <img src="./img/banner.png" alt="Banner with text logo, green fire and decorative elements"
+                     class="banner__image" loading="lazy"/>
+                </picture>
             </div>
         </section>
     </main>
